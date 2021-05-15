@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-md-6">
+    <h4>您的WES绩点为:{{ final }}</h4>
+    <h5>下表中为WES算法方式</h5>
+    <p>------------------</p>
+    <a href="https://applications.wes.org/igpa-calculator/">点击这里查询官网</a>
+    <table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">序号</th>
+      <th scope="col">成绩</th>
+      <th scope="col">绩点</th>
+        <th scope="col">对应分级成绩</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>100-85</td>
+      <td>4.0</td>
+        <td>A</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>84-75</td>
+      <td>3.0</td>
+        <td>B</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>74-60</td>
+      <td>2</td>
+        <td>C</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>59-0</td>
+      <td>0</td>
+        <td>F</td>
+    </tr>
+  </tbody>
+    </table>
+</div>
+<div>
+    <h5>下图为您在所有学期的平均百分比成绩</h5>
+<img src="/plot.png" alt="my plot">
+</div>
+{% endblock %}
+
+
+
+
+
+
